@@ -1,0 +1,6 @@
+rootProject.name = 'kafka-microservices'
+
+include ":order-service"
+include ":customer-service"
+include ":service-utils"
+

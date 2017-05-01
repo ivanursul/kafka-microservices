@@ -1,0 +1,30 @@
+server:
+  port: 8787
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate.ddl-auto: create-drop
+  database:
+    driverClassName: org.postgresql.Driver
+    username: lohika
+    password: lohika
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/kafka-microservices
+
+kafka:
+  producer:
+    bootstrapServers: localhost:9092
+    acks: all
+    retries: 0
+    batchSize: 16384
+    lingerMs: 1
+    bufferMemory: 33554432
+    keySerializer: org.apache.kafka.common.serialization.StringSerializer
+  consumer:
+    bootstrapServers: localhost:9092
+    groupId: customerServiceGroup
+    keyDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+    valueDeserializer: org.apache.kafka.common.serialization.StringDeserializer

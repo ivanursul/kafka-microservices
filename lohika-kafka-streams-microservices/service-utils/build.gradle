@@ -1,0 +1,12 @@
+group 'org.lohika.kafka'
+apply plugin: 'java'
+
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.apache.kafka', name: 'kafka-streams', version: '0.10.2.0'
+}

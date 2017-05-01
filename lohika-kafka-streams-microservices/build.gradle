@@ -1,0 +1,36 @@
+group 'org.lohika.kafka'
+version '1.0-SNAPSHOT'
+apply plugin: 'java'
+
+configurations {
+    provided
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    dependencies {
+        compile("org.projectlombok:lombok:1.16.8")
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+project(':order-service-streams') {
+    dependencies {
+        compile project(':service-utils')
+    }
+}
+
+project(':customer-service') {
+    dependencies {
+        compile project(':service-utils')
+    }
+}
+
+
+
+
+

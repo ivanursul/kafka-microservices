@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="customer-service_main" target="1.8" />
+      <module name="customer-service_test" target="1.8" />
+      <module name="kafka-microservices_main" target="1.8" />
+      <module name="kafka-microservices_test" target="1.8" />
+      <module name="microservices_main" target="1.8" />
+      <module name="microservices_test" target="1.8" />
+      <module name="order-service_main" target="1.8" />
+      <module name="order-service_test" target="1.8" />
+      <module name="service-utils_main" target="1.8" />
+      <module name="service-utils_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

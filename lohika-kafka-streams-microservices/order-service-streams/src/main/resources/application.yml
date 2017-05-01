@@ -1,0 +1,25 @@
+server:
+  port: 8686
+
+kafka:
+  producer:
+    bootstrapServers: localhost:9092
+    acks: all
+    retries: 0
+    batchSize: 16384
+    lingerMs: 1
+    bufferMemory: 33554432
+    keySerializer: org.apache.kafka.common.serialization.StringSerializer
+  streams:
+    bootstrapServers: localhost:9092
+    groupId: orderServiceGroup
+    keyDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+    valueDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+spring:
+  data:
+    mongodb:
+      database: kafka-microservices
+      port: 27017
+      username: lohika
+      password: lohika

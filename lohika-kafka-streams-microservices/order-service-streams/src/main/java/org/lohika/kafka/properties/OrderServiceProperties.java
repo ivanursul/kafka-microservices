@@ -1,0 +1,18 @@
+package org.lohika.kafka.properties;
+
+
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties
+public class OrderServiceProperties {
+
+    private KafkaProperties kafka;
+
+    @Data
+    public static class KafkaProperties {
+
+        private KafkaProducerProperties producer;
+        private KafkaStreamsProperties streams;
+    }
+}
