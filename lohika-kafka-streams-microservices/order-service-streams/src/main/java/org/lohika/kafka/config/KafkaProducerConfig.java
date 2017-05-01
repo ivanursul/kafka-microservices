@@ -2,7 +2,6 @@ package org.lohika.kafka.config;
 
 import org.lohika.kafka.properties.KafkaProducerProperties;
 import org.lohika.kafka.resource.OrderCreatedResource;
-import org.lohika.kafka.resource.OrderProcessedResource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;
@@ -20,14 +19,6 @@ public class KafkaProducerConfig {
     public ProducerFactory<String, OrderCreatedResource> producerFactory(KafkaProducerProperties properties) {
         Map<String, Object> props = producerConfigs(properties);
         props.put("value.serializer", "org.lohika.kafka.serializers.OrderCreatedJacksonSerializer");
-
-        return new DefaultKafkaProducerFactory<>(props);
-    }
-
-    @Bean
-    public ProducerFactory<String, OrderProcessedResource> orderProcessedProducerFactory(KafkaProducerProperties properties) {
-        Map<String, Object> props = producerConfigs(properties);
-        props.put("value.serializer", "org.lohika.kafka.serializers.OrderProcessedJacksonSerializer");
 
         return new DefaultKafkaProducerFactory<>(props);
     }
@@ -53,11 +44,6 @@ public class KafkaProducerConfig {
     @Bean(name = "kafkaTemplate")
     public KafkaTemplate<String, OrderCreatedResource> kafkaTemplate(KafkaProducerProperties properties) {
         return new KafkaTemplate<>(producerFactory(properties));
-    }
-
-    @Bean(name = "orderProcessedKafkaTemplate")
-    public KafkaTemplate<String, OrderProcessedResource> orderProcessedKafkaTemplate(KafkaProducerProperties properties) {
-        return new KafkaTemplate<>(orderProcessedProducerFactory(properties));
     }
 
 }

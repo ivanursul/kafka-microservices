@@ -1,6 +1,5 @@
 package org.lohika.kafka.config;
 
-import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.KeyValue;
 import org.apache.kafka.streams.StreamsConfig;
@@ -41,8 +40,6 @@ public class KafkaStreamsConfig {
     @Bean
     public KStream<String, OrderProcessedResource> orderCreatedStreams(KStreamBuilder kStreamBuilder) {
 
-        Serde<OrderCreatedResource> valSerde = DomainSerdes.from(OrderCreatedResource.class);
-
         GlobalKTable<String, ChargeAccountResource> userBalanceGlobalTable =
                 kStreamBuilder.globalTable(
                         Serdes.String(),
@@ -53,7 +50,7 @@ public class KafkaStreamsConfig {
 
         KStream<String, OrderProcessedResource> stream = kStreamBuilder.stream(
                     Serdes.String(),
-                    valSerde,
+                    DomainSerdes.from(OrderCreatedResource.class),
                     "order.created.v2"
                 )
                 .map((k, v) -> KeyValue.pair(v.getLogin(), v))
