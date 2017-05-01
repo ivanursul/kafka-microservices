@@ -24,10 +24,10 @@ import org.springframework.kafka.annotation.EnableKafkaStreams;
 })
 @EnableKafka
 @EnableKafkaStreams
-public class OrderServiceAppV2 {
+public class OrderServiceApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OrderServiceAppV2.class, args);
+		SpringApplication.run(OrderServiceApp.class, args);
 	}
 
 }

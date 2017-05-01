@@ -18,7 +18,7 @@ repositories {
     mavenCentral()
 }
 
-project(':order-service-streams') {
+project(':order-service') {
     dependencies {
         compile project(':service-utils')
     }

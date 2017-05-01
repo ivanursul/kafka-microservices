@@ -1,6 +1,6 @@
 rootProject.name = 'kafka-streams-microservices'
 
-include ":order-service-streams"
+include ":order-service"
 include ":customer-service"
 include ":service-utils"
 

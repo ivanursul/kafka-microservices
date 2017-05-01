@@ -8,9 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kafka-streams-microservices.iml" filepath="$PROJECT_DIR$/.idea/modules/kafka-streams-microservices.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kafka-streams-microservices_main.iml" filepath="$PROJECT_DIR$/.idea/modules/kafka-streams-microservices_main.iml" group="kafka-streams-microservices" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/kafka-streams-microservices_test.iml" filepath="$PROJECT_DIR$/.idea/modules/kafka-streams-microservices_test.iml" group="kafka-streams-microservices" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service-streams/order-service-streams.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service-streams/order-service-streams.iml" group="order-service-streams" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service-streams/order-service-streams_main.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service-streams/order-service-streams_main.iml" group="order-service-streams" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service-streams/order-service-streams_test.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service-streams/order-service-streams_test.iml" group="order-service-streams" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service/order-service.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service/order-service.iml" group="order-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service/order-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service/order-service_main.iml" group="order-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/order-service/order-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/order-service/order-service_test.iml" group="order-service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-utils/service-utils.iml" filepath="$PROJECT_DIR$/.idea/modules/service-utils/service-utils.iml" group="service-utils" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-utils/service-utils_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-utils/service-utils_main.iml" group="service-utils" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-utils/service-utils_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-utils/service-utils_test.iml" group="service-utils" />
