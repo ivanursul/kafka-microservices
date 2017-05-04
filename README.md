@@ -54,9 +54,7 @@ Give an example
 
 ## Authors
 
-* **Ivan Ursul** - *Initial work* - [PurpleBooth](https://ivanursul.com)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Ivan Ursul** - [ivanursul.com](https://ivanursul.com)
 
 ## License
 
