@@ -5,6 +5,7 @@ import org.lohika.kafka.config.KafkaProducerConfig;
 import org.lohika.kafka.properties.KafkaProducerProperties;
 import org.lohika.kafka.properties.KafkaStreamsProperties;
 import org.lohika.kafka.properties.OrderServiceProperties;
+import org.lohika.kafka.properties.ServerProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -18,6 +19,7 @@ import org.springframework.kafka.annotation.EnableKafkaStreams;
 		KafkaStreamsConfig.class
 })
 @EnableConfigurationProperties({
+		ServerProperties.class,
 		OrderServiceProperties.class,
 		KafkaProducerProperties.class,
 		KafkaStreamsProperties.class

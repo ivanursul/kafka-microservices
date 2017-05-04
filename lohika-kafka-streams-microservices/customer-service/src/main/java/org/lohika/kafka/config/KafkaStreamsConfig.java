@@ -71,7 +71,7 @@ public class KafkaStreamsConfig {
                     "order.processed.v2"
                 )
                 .filter((k, v) -> BalanceStatus.AVAILABLE.equals(v.getBalanceStatus()))
-                .map((k, v) -> KeyValue.pair(k, new ChargeAccountResource(
+                .map((k, v) -> KeyValue.pair(v.getLogin(), new ChargeAccountResource(
                         v.getPrice().multiply(new BigDecimal(-1))
                 )));
 
