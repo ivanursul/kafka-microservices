@@ -9,22 +9,21 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+cd to kafka directory
 
-Say what the step will be
-
+Start Zookeper
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Start Kafka Node
 
+```
+bin/kafka-server-start.sh config/server.properties
+```
+Start Order and Customer Service
+
+Explore commands in Postman Collection kafka-microservices.postman_collection
 
 ## Authors
 
