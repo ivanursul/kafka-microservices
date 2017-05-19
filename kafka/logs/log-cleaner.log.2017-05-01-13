@@ -1,0 +1,3 @@
+[2017-05-01 13:28:17,204] INFO The cleaning for partition customer.resource.created-0 is aborted and paused (kafka.log.LogCleaner)
+[2017-05-01 13:28:17,206] INFO Compaction for partition customer.resource.created-0 is resumed (kafka.log.LogCleaner)
+[2017-05-01 13:28:17,206] INFO The cleaning for partition customer.resource.created-0 is aborted (kafka.log.LogCleaner)

@@ -58,16 +58,14 @@ public class OrderController {
                 "order-status", orderUid, new StringSerializer()
         );
 
-        if (InetAddress.getLocalHost().getHostAddress().equals(streamsMetadata.host())) {
-            ReadOnlyKeyValueStore<String, OrderProcessedResource> store
-                    = kafkaStreams.store("order-status", QueryableStoreTypes.keyValueStore());
-
-            return store.get(orderUid);
-        } else {
-            // http call to other instance
+        if (!InetAddress.getLocalHost().getHostAddress().equals(streamsMetadata.host())) {
+            // return http.call(..)
         }
 
-        return null;
+        ReadOnlyKeyValueStore<String, OrderProcessedResource> store
+                = kafkaStreams.store("order-status", QueryableStoreTypes.keyValueStore());
+
+        return store.get(orderUid);
     }
 
     public KafkaStreams getKafkaStreams() throws IllegalAccessException, NoSuchFieldException {

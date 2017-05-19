@@ -5,7 +5,6 @@ spring:
   jpa:
     database: POSTGRESQL
     show-sql: true
-    hibernate.ddl-auto: create-drop
   database:
     driverClassName: org.postgresql.Driver
     username: lohika

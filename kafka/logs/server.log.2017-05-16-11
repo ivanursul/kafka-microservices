@@ -1,0 +1,6 @@
+[2017-05-16 11:35:53,091] INFO [GroupCoordinator 0]: Preparing to restabilize group customerServiceGroup with old generation 11 (kafka.coordinator.GroupCoordinator)
+[2017-05-16 11:35:53,096] INFO [GroupCoordinator 0]: Group customerServiceGroup with generation 12 is now empty (kafka.coordinator.GroupCoordinator)
+[2017-05-16 11:35:53,097] INFO [GroupCoordinator 0]: Preparing to restabilize group orderServiceGroup with old generation 5 (kafka.coordinator.GroupCoordinator)
+[2017-05-16 11:35:53,098] INFO [GroupCoordinator 0]: Group orderServiceGroup with generation 6 is now empty (kafka.coordinator.GroupCoordinator)
+[2017-05-16 11:40:58,148] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-05-16 11:50:58,117] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)

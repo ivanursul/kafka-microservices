@@ -1,0 +1,7 @@
+[2017-04-12 23:03:21,360] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-04-12 23:13:21,335] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-04-12 23:23:21,311] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-04-12 23:33:21,285] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-04-12 23:43:21,259] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2017-04-12 23:53:21,233] INFO [Group Metadata Manager on Broker 0]: Group console-consumer-47667 transitioned to Dead in generation 2 (kafka.coordinator.GroupMetadataManager)
+[2017-04-12 23:53:21,234] INFO [Group Metadata Manager on Broker 0]: Removed 1 expired offsets in 1 milliseconds. (kafka.coordinator.GroupMetadataManager)
