@@ -1,0 +1,91 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Kafka Microservices",
+		"_postman_id": "0f88b3c4-6ad7-3111-d372-5cbab6e08cf9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get customer balance",
+			"request": {
+				"url": "http://localhost:8787/api/accounts/ivanursul",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"client_id\": \"e254d814adf87870b143c0634e550c8e\",\n    \"username\": \"ic130915040833\",\n    \"password\": \"work-tracker\",\n    \"grant_type\": \"password\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Recharge account",
+			"request": {
+				"url": "http://localhost:8787/api/accounts/ivanursul",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"amount\": 35.01\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order",
+			"request": {
+				"url": "http://localhost:8686",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"login\": \"ivanursul\",\n\t\"price\": 140,\n\t\"products\": [\n\t\t{\n\t\t\t\"name\": \"apple\",\n\t\t\t\"count\": 2\n\t\t},\n\t\t{\n\t\t\t\"name\": \"potato\",\n\t\t\t\"count\": 5\n\t\t}\n\t]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Order details",
+			"request": {
+				"url": "http://localhost:8686/5c443216-3147-478f-a2a7-77784b446057",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"login\": \"ivanursul\",\n\t\"price\": 140,\n\t\"products\": [\n\t\t{\n\t\t\t\"name\": \"apple\",\n\t\t\t\"count\": 2\n\t\t},\n\t\t{\n\t\t\t\"name\": \"potato\",\n\t\t\t\"count\": 5\n\t\t}\n\t]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
